@@ -3,58 +3,75 @@
 % !Mode:: "TeX:UTF-8"
 
 \documentclass{resume}
-\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+% \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{NotoSansSC_external}
+\usepackage{NotoSerifCJKsc_external}
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{张 勇 涛}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{836807627@qq.com} \textperiodcentered\ 
+  \phone{136-621-69796} \textperiodcentered\ 
+}
+\basicInfo{
+  \homepage{https://protao.github.io} \textperiodcentered\ 
+  \github{https://github.com/protao} \textperiodcentered\ 
+}
  
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
-
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\section{\faCircleO\ 教育背景}
+\datedsubsection{\textbf{中科院信息工程研究所}, 北京}{2016 -- 至今}
+\textit{在读硕士研究生}\ 计算机技术, 预计 2019 年 6 月毕业
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+  \item 部分选修课程：大规模数据分析、模式识别与机器学习、自然语言处理
+  \item 多次组织学生活动的经验；获得2017-2018学年三好学生。
+\end{itemize}
+\datedsubsection{\textbf{南开大学}, 天津}{2012 -- 2016}
+\textit{学士}\ 信息安全与法学双学位
+\begin{itemize}
+  \item 连续获得南开大学公能专项奖学金；校级合唱比赛金奖；院级排球比赛金牌；院级篮球比赛铜牌。
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
+
+\section{\faCircleO\ 项目经历}
+\datedsubsection{\textbf{异常流量检测技术研究与系统实现},  中兴通讯}{2018年3月 -- 至今}
+\role{负责专利的撰写投稿与内网模块的设计开发}{}
 \begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+  \item 使用开源图嵌入工具OpenNE对内网网络结构进行表征学习。
+  \item 根据内部HTTP bro日志，对用户访问模式进行建模，感知可能的威胁行为。
+  \item 专利《一种随机子域名DDoS攻击检测方法》申请号：201801641482.7
+\end{itemize}
+
+\datedsubsection{\textbf{大规模网络日志处理平台}, 中国移动}{2018年1月 -- 2018年6月}
+\role{负责日志的管理维护与spark job的参数调优}{}
+\begin{itemize}
+  \item 对主要参数与任务执行时间建立回归模型。
+  \item 部署定时任务，自动执行任务，收集数据并更新已有数据模型。
+  \item 使用粒子群算法对模型搜索最优点。
+  \item 部署定时任务，管理每日数据上传与监控。
+\end{itemize}
+
+
+\datedsubsection{\textbf{基于高斯混合模型的背景提取算法的实现}, 课程设计}{2017 年5月 -- 2017年6月}
+\role{实验报告https://protao.github.io/2017/05/18/MachingLearning-2017-05-18-ComputerVisionGMM}{}
+\begin{onehalfspacing}
+\begin{itemize}
+  \item matlib 矢量化编程，加速模型迭代流程
+  \item 对EM算法进行微调，使之适应在线学习。
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
+\datedsubsection{\textbf{游戏玩家付费金额预测大赛}, 个人比赛}{2018 年6月底 -- 至今}
+\role{比赛主页：http://www.dcjingsai.com}{}
 \begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
 \begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+  \item 对目标用户的未来消费值进行预测，截止至2018年7月10日，850支参赛队伍中排名117.
+  \item 使用模型的集成提高模型预测能力。
 \end{itemize}
 \end{onehalfspacing}
 
@@ -65,24 +82,13 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\section{\faCircleO\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
-\end{itemize}
-
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
+  \item 个人博客: protao.github.io
+  \item 编程工具: 熟练掌握Python, 以及常见数据处理与机器学习工具包, 如numpy / matplotlib / pandas / sklearn.
+  \item 开发平台: 熟悉linux上的开发环境，熟悉bash脚本。
+  \item 基础知识: 熟悉常用机器学习算法的原理与使用，了解深度学习基本原理与常用网络结构，了解相关数学基础。具有良好的数据结构与算法基础。
 \end{itemize}
 
 %% Reference
